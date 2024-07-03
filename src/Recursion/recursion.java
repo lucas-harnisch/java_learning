@@ -1,11 +1,19 @@
-//@author Lucas Harnisch
 // simple demonstration of recursion in java with factorial
+// 
 
+//used package
+package src.Recursion;
 
-package src;
-
+//imports
 import java.util.Scanner;
 
+// import for the annotation
+import src.Annotation.annotation_author;
+
+// author decleration
+@annotation_author(name = "Lucas Harnisch")
+
+// start of the class
 public class recursion {
 
 
