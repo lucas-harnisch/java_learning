@@ -2,16 +2,15 @@
 // 
 
 //used package
-package src.Recursion;
+package src.recursion;
 
 //imports
 import java.util.Scanner;
 
-// import for the annotation
-import src.Annotation.annotation_author;
+import src.annotation.*;
 
 // author decleration
-@annotation_author(name = "Lucas Harnisch")
+@author(name = "Lucas Harnisch")
 
 // start of the class
 public class recursion {
