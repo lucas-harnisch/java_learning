@@ -1,4 +1,4 @@
-package arithmetics;
+package src.arithmetics;
 
 public class simple_arithmetics {
 
