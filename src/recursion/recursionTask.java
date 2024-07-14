@@ -1,7 +1,7 @@
 package src.recursion;
 
 
-public class recursion1 {
+public class recursionTask {
 
 public static void main(String[] args) {
         

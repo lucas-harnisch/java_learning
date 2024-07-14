@@ -1,5 +1,9 @@
 package src.Klausur;
-public class Tischlerei {
+public class Tischlerei { 
+    public static void main(String[] args) {
+        // Beispielaufruf für ein Ausgangsbrett der Länge 3
+        brettlaengen(3);
+    }
 
     public static void brettlaengen(int laenge) {
         // Hilfsmethode aufrufen, um Kombinationen zu finden
@@ -22,11 +26,6 @@ public class Tischlerei {
         if (laenge >= 2) {
             findCombinations(laenge - 2, prefix + "2 ");
         }
-    }
-
-    public static void main(String[] args) {
-        // Beispielaufruf für ein Ausgangsbrett der Länge 3
-        brettlaengen(6);
     }
 }
 

@@ -13,7 +13,7 @@ import src.annotation.*;
 @author(name = "Lucas Harnisch")
 
 // start of the class
-public class recursion {
+public class recursionExplanation {
 
 
     //calling the method
