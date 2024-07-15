@@ -3,7 +3,7 @@ package src.Klausur.Klausur2;
 import src.annotation.author;
 
 
-// Aufgabe 3 in Beispielklausur 2a für PR1 SoSe2024 
+// Aufgabe 2a in Beispielklausur 2 für PR1 SoSe2024 
 
 @author(name = "Lucas Harnisch")
 
