@@ -1,5 +1,7 @@
-package src.Klausur;
+package src.Klausur.Klausur2;
 import src.annotation.author;
+
+// Aufgabe 3 in Beispielklausur 2b für PR1 SoSe2024 
 
 @author(name = "Lucas Harnisch")
 public class A2b {

@@ -2,6 +2,8 @@ package src.recursion;
 
 import src.annotation.author;
 
+// a simple aexample of an greedy_recursion
+
 @author(name = "Lucas Harnisch")
 public class greedy_recursion {
     public static void main(String[] args) {

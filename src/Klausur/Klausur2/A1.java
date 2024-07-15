@@ -1,4 +1,4 @@
-package src.Klausur;
+package src.Klausur.Klausur2;
 
 import src.annotation.author;
 

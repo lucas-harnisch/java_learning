@@ -1,27 +1,25 @@
-package src.recursion;
+package src.Klausur.Klausur1;
 
 import src.annotation.author;
 
+// Aufgabe 1 in Beispielklausur 1 für PR1 SoSe2024 + Aufgabe 2d
+
 
 @author(name = "Lucas Harnisch")
-public class recursionTask {
+public class A1undA2d {
 
 public static void main(String[] args) {
         
-rek(4);        
 
-
+int w = f(2,3); // Aufgabe 1
+System.out.println("Der Wert ist: " + w );
 System.out.println("");
+rek(4); // Aufgabe 2d 
 
-
-
-int w = f(2,3);
-
-System.out.println(w);
 
     }
-
-    static int f(int z, int x){
+// Aufgabe 1
+static int f(int z, int x){
         System.out.println(z + " " + x);
 
         if (z == x) {
@@ -30,11 +28,11 @@ System.out.println(w);
         if (z == 0) {
             return 1;
         }
-return  f(z, x-1) + f(z-1,x-1);
+    return  f(z, x-1) + f(z-1,x-1);
    
 
 }
-    
+// Aufgabe 2d
 public static void rek(int z) {
     z--;
     System.out.println(z);

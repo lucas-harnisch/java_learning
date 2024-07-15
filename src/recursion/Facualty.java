@@ -3,6 +3,8 @@ package src.recursion;
 import src.annotation.author;
 
 
+// implements an recursive algorithm for facualty
+
 @author(name = "Lucas Harnisch")
 public class Facualty {
 

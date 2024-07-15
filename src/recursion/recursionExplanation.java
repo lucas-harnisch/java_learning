@@ -6,7 +6,6 @@ package src.recursion;
 
 //imports
 import java.util.Scanner;
-
 import src.annotation.*;
 
 // author decleration

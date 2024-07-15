@@ -2,6 +2,8 @@ package src.recursion;
 
 import src.annotation.author;
 
+// implements an recursive algorithm for the Fabonnaci calculation
+
 @author(name = "Lucas Harnisch")
 
 public class Fibonacci {
