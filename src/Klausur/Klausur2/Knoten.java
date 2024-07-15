@@ -16,6 +16,11 @@ class Knoten {
         setWert(w);
         setNaechster(n);
     }
+    // Knoten für leeren Konstruktor
+    Knoten() {
+
+
+    }
 
     // bekomme Wert 
     int getWert() {
@@ -40,7 +45,7 @@ class Knoten {
 
 
     // ÜBERPRÜFE ob Knoten vorkommt
-    boolean kommtVor(Knoten a, int x) {
+    static boolean kommtVor(Knoten a, int x) {
 
 
 
@@ -58,17 +63,50 @@ class Knoten {
         return false;
     }
 
+    // Methode zum Ausgeben der gesamten verketteten Liste
+        static void druckeListe(Knoten start) {
+            Knoten aktuellerKnoten = start;
+            while (aktuellerKnoten != null) {
+                System.out.print(aktuellerKnoten.getWert() + "<>"); // Verkettung sichtbar machen
+                aktuellerKnoten = aktuellerKnoten.getNaechster();
+            }
+            System.out.println();
+        }
+
 
 
     public static void main(String[] args) {
-        // Beispiel zur Verwendung der Knoten-Klasse
-        Knoten knoten3 = new Knoten(3, null); // Eine 
-        Knoten knoten2 = new Knoten(2, knoten3);
-        Knoten knoten1 = new Knoten(1, knoten2);
+        // Anlegen des ersten Knotens
+        Knoten first_Knoten = new Knoten();  
+        
+        // Wert für first Knoten setzen
+        first_Knoten.setWert(10);
 
-        // Zugriff auf den Wert und den nächsten Knoten
-        System.out.println("Wert von knoten1: " + knoten1.getWert());
-        System.out.println("Wert von knoten2: " + knoten1.getNaechster().getWert());
-        System.out.println("Wert von knoten3: " + knoten1.getNaechster().getNaechster().getWert());
+        // neues Objekt in der Kette erstellen
+        Knoten second_Knoten = new Knoten();
+
+        // first Knoten mit second Knoten verlinken
+        first_Knoten.setNaechster(second_Knoten);
+
+        // Wert für second Knoten setzen
+        second_Knoten.setWert(500);
+
+        //neues Objekt in der Kette erstellen
+        Knoten third_Knoten = new Knoten();
+
+        // second Knoten mit third Knoten verlinken
+        second_Knoten.setNaechster(third_Knoten);
+
+        // Wert für third Knoten setzen
+        third_Knoten.setWert(600);
+
+        
+
+        //checke ob vorkommt
+        System.out.println(kommtVor(first_Knoten, 600));
+
+        //drucke ganze Liste
+        druckeListe(first_Knoten);
+
     }
 }
