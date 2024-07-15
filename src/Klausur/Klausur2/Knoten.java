@@ -17,7 +17,7 @@ class Knoten {
         setNaechster(n);
     }
 
-    // bekomme Wert
+    // bekomme Wert 
     int getWert() {
         return wert;
     }
