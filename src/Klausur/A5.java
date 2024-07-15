@@ -1,8 +1,11 @@
 package src.Klausur;
 
-public class Preis{
+import src.annotation.author;
+
+@author(name = "Lucas Harnisch")
+public class A5{
     double p;
-    Preis (double neuP) {
+    A5 (double neuP) {
     p = neuP;
     }
 
@@ -12,7 +15,7 @@ public class Preis{
     }
 
 
-    public static double sum(Preis[] a) {
+    public static double sum(A5[] a) {
     int i = 1;
     double r = 0.0;
     while (i < a.length) {

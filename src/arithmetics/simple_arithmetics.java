@@ -1,5 +1,10 @@
 package src.arithmetics;
 
+import src.annotation.author;
+
+
+@author(name = "Lucas Harnisch")
+
 public class simple_arithmetics {
 
     public static void main(String[] args) {

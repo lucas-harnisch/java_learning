@@ -1,4 +1,10 @@
 package src.Klausur;
+
+import src.annotation.author;
+
+
+
+@author(name = "Lucas Harnisch") 
 class Knoten {
 
     // Instanzvariablen
@@ -34,13 +40,29 @@ class Knoten {
 
 
     // ÜBERPRÜFE ob Knoten vorkommt
+    boolean kommtVor(Knoten a, int x) {
 
+
+
+        while (a  != null) {
+
+            if (a.getWert() == x) {
+
+                return true;
+            }
+            
+            a = a.getNaechster();
+
+        }
+        
+        return false;
+    }
 
 
 
     public static void main(String[] args) {
         // Beispiel zur Verwendung der Knoten-Klasse
-        Knoten knoten3 = new Knoten(3, null);
+        Knoten knoten3 = new Knoten(3, null); // Eine 
         Knoten knoten2 = new Knoten(2, knoten3);
         Knoten knoten1 = new Knoten(1, knoten2);
 

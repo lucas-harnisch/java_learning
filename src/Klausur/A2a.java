@@ -1,5 +1,10 @@
 package src.Klausur;
 
+import src.annotation.author;
+
+
+@author(name = "Lucas Harnisch")
+
 public class A2a {
 
     public static void main(String[] args) {

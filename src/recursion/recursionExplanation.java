@@ -1,5 +1,5 @@
 // simple demonstration of recursion in java with factorial
-// 
+
 
 //used package
 package src.recursion;

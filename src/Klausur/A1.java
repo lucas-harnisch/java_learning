@@ -1,5 +1,11 @@
 package src.Klausur;
-public class Tischlerei { 
+
+import src.annotation.author;
+
+// Aufgabe 1 in Beispielklausur 2 für PR1 SoSe2024 
+
+@author(name = "Lucas Harnisch")
+public class A1 { 
     public static void main(String[] args) {
         // Beispielaufruf für ein Ausgangsbrett der Länge 3
         brettlaengen(3);

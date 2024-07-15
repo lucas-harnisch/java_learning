@@ -1,5 +1,9 @@
 package src.recursion;
 
+import src.annotation.author;
+
+@author(name = "Lucas Harnisch")
+
 public class Fibonacci {
     public static void main(String[] args) {
         int n = 42; 

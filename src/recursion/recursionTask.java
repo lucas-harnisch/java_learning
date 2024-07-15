@@ -1,6 +1,9 @@
 package src.recursion;
 
+import src.annotation.author;
 
+
+@author(name = "Lucas Harnisch")
 public class recursionTask {
 
 public static void main(String[] args) {
