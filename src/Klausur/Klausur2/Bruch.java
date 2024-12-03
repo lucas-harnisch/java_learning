@@ -37,13 +37,13 @@ public class Bruch {
     public void setZaehler(long zaehler) {
 
         this.zaehler = zaehler;
-        ggt();
+ 
     }
 
     public void setNenner (long nenner) {
 
         this.nenner = nenner;
-        ggt();
+  
     }
 
 
