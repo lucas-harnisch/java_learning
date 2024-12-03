@@ -14,10 +14,10 @@ public record Person(String id, String name) {
     // Compact constructor for validation
     public Person {
         if (id == null || id.isBlank()) {
-            throw new IllegalArgumentException("ID cannot be empty!");
+            throw new IllegalArgumentException("An empty ID is not allowed!");
         }
         if (name == null || name.isBlank()) {
-            throw new IllegalArgumentException("Name cannot be empty!");
+            throw new IllegalArgumentException("An empty Name is not allowed!");
         }
     }
 }
