@@ -4,6 +4,8 @@
 
 //that allows multiple classes to have the same methods with different functions
 
+package src.object;
+
 public interface Animal {
     
 
