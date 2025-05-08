@@ -20,4 +20,9 @@ public record Person(String id, String name) {
             throw new IllegalArgumentException("An empty Name is not allowed!");
         }
     }
+
+    public static Person builder() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'builder'");
+    }
 }
