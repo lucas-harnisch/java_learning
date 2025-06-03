@@ -1,8 +1,9 @@
-package testing;
-
-import simple_sort.*;
+package SortTest;
 
 import org.junit.jupiter.api.Test;
+
+import SortAlgorithm.*;
+
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class SimpleSelectionSortTest {
@@ -12,7 +13,7 @@ public class SimpleSelectionSortTest {
         int[] input = {5, 3, 8, 4, 2};
         int[] expected = {2, 3, 4, 5, 8};
 
-        SimpleBubbleSort.bubblesort(input);  // Aufruf der zu testenden Methode
+        SortAlgorithm.SimpleBubbleSort.bubblesort(input);  // Aufruf der zu testenden Methode
 
         // Verifizieren, dass das Ergebnis mit dem erwarteten Array übereinstimmt
         assertArrayEquals(expected, input, "Das Array sollte korrekt sortiert werden.");
@@ -23,7 +24,7 @@ public class SimpleSelectionSortTest {
         int[] input = {};
         int[] expected = {};
 
-        SimpleBubbleSort.bubblesort(input);
+        SortAlgorithm.SimpleBubbleSort.bubblesort(input);
 
         assertArrayEquals(expected, input, "Ein leeres Array sollte unverändert bleiben.");
     }
@@ -33,7 +34,7 @@ public class SimpleSelectionSortTest {
         int[] input = {42};
         int[] expected = {42};
 
-        SimpleBubbleSort.bubblesort(input);
+        SortAlgorithm.SimpleBubbleSort.bubblesort(input);
 
         assertArrayEquals(expected, input, "Ein Array mit einem Element sollte unverändert bleiben.");
     }
@@ -43,7 +44,7 @@ public class SimpleSelectionSortTest {
         int[] input = {1, 2, 3, 4, 5};
         int[] expected = {1, 2, 3, 4, 5};
 
-        SimpleBubbleSort.bubblesort(input);
+        SortAlgorithm.SimpleBubbleSort.bubblesort(input);
 
         assertArrayEquals(expected, input, "Ein bereits sortiertes Array sollte unverändert bleiben.");
     }
@@ -53,7 +54,7 @@ public class SimpleSelectionSortTest {
         int[] input = {9, 7, 5, 3, 1};
         int[] expected = {1, 3, 5, 7, 9};
 
-        SimpleBubbleSort.bubblesort(input);
+        SortAlgorithm.SimpleBubbleSort.bubblesort(input);
 
         assertArrayEquals(expected, input, "Ein umgekehrt sortiertes Array sollte korrekt sortiert werden.");
     }

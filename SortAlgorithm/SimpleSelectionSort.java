@@ -1,4 +1,4 @@
-package simple_sort;
+package SortAlgorithm;
 
 public class SimpleSelectionSort {
 
