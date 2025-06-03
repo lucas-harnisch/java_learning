@@ -2,7 +2,7 @@ package PersonBuilder;
 
 import java.util.Objects;
 
-public class Person {
+public class Person implements Cloneable{
 
     //all fields for a person
     private String firstName;
@@ -41,6 +41,11 @@ public class Person {
     }
 
 
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
 
     @Override
     public boolean equals(Object obj) {
@@ -70,6 +75,7 @@ public class Person {
             return false;
         return true;
     }
+
 
 
 
