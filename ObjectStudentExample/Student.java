@@ -20,7 +20,44 @@ public class Student {
         return "Student [name=" + name + ", grades=" + grades + "]";
         
     }
-//getter for grades
+
+
+    
+
+
+@Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        result = prime * result + ((grades == null) ? 0 : grades.hashCode());
+        return result;
+    }
+    
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Student other = (Student) obj;
+        if (name == null) {
+            if (other.name != null)
+                return false;
+        } else if (!name.equals(other.name))
+            return false;
+        if (grades == null) {
+            if (other.grades != null)
+                return false;
+        } else if (!grades.equals(other.grades))
+            return false;
+        return true;
+    }
+
+
+    //getter for grades
     public static HashMap<String, Integer> getGrades(Student student) {
         return student.grades;
     }
